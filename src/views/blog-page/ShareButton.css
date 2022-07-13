@@ -1,0 +1,66 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+#share {
+    cursor: pointer;
+    transition: 0.25s;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1;
+    background: white;
+    bottom: 50px;
+    right: 50px;
+    color: rgba(30, 30, 30, 0.8);
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    box-shadow: 0 7px 25px -5px gray;
+}
+#share:hover {
+    box-shadow: 0 0px 10px -6px gray;
+    color: rgba(30, 30, 30, 1);
+}
+
+.fa-share-alt,
+.fa-close {
+    top: 6px;
+    left: -1px;
+}
+.sm-social {
+    cursor: pointer;
+    transition: 0.25s;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 55px;
+    height: 40px;
+    width: 40px;
+    font-size: 28px;
+    box-shadow: 0 10px 15px -10px;
+}
+.sm-social:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+.sm-icon {
+    top: 2px;
+    color: white;
+}
+#fb {
+    background: #3b5998;
+}
+#twit {
+    background: #25d366;
+}
+#pin {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+.fa-close {
+    left: 1px;
+}

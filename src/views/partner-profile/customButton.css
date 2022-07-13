@@ -1,0 +1,54 @@
+.custom-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(22, 12, 66);
+    cursor: pointer;
+}
+.custom-button {
+    text-decoration: none;
+    color: rgb(22, 12, 66);
+    border: 3px solid rgb(22, 12, 66);
+    padding: 2vh 3vw;
+    font-size: 1.1vw;
+    position: relative;
+    transition: all 0.5s;
+}
+.custom-button::before,
+.custom-button::after {
+    content: '';
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-style: solid;
+    border-color: rgb(22, 12, 66);
+    transition: all 0.5s;
+}
+.custom-button::before {
+    top: -1.5rem;
+    left: -1.5rem;
+    border-width: 3px 0 0 3px;
+}
+.custom-button::after {
+    bottom: -1.5rem;
+    right: -1.5rem;
+    border-width: 0px 3px 3px 0px;
+}
+
+.custom-button:hover::before,
+.custom-button:hover::after {
+    width: calc(100% + 3em);
+    height: calc(100% + 3em);
+    border-color: rgb(22, 12, 66);
+}
+
+@media screen and (max-width: 959px) {
+    .custom-button {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .custom-button {
+        font-size: 2.5vw;
+    }
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+.header {
+    margin: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    background-image: url('../../assets/images/bg-pattern-card.svg');
+    background-size: cover;
+    text-align: center;
+    border-radius: 15px;
+}
+.img-caption {
+    /* // font-size: 25pt; */
+    color: #3b464c;
+    font-family: 'Handlee', cursive;
+    font-weight: 700;
+    padding-top: 0px;
+    font-size: 3.5em;
+}
+.img-div {
+    width: 98%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    /* //background:white; */
+}
+.image img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    border: 6px solid #fff;
+    border-radius: 50%;
+}
+.image {
+    /*responsive*/
+    max-width: 99%;
+    height: auto;
+    /* */
+    /*centerized*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* */
+}
+
+/* Left container */
+.text-body {
+    border-radius: 15px;
+}
+.text-body h2 {
+    font-family: 'Handlee', cursive;
+    display: inline-block;
+    text-align: center;
+    border: 5px dashed #20bcd5;
+    padding: 20px 15px;
+    color: #20bcd5;
+    margin: auto 10px;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.text-body .content {
+    font-size: 3.6vh;
+    text-align: left;
+    padding: 0 3vw;
+}
+
+.text-body .content p {
+    font-family: 'Handlee', cursive;
+    color: #000;
+}
+
+.text-body .right {
+    font-size: 25px;
+    text-align: right;
+}
+
+.text-body .right p {
+    padding-top: 40px;
+    font-family: 'Handlee', cursive;
+}
