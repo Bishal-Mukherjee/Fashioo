@@ -1,0 +1,8 @@
+const factorial = (n, temp) => {
+  if (n === 1) {
+    return temp;
+  }
+  factorial(n - 1, n * temp);
+};
+
+console.log(factorial(5, 1));
