@@ -7,11 +7,12 @@ const SectionHeader = ({ primaryText, secondaryText }) => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div
+        className="section_header"
         style={{
           color: "#160C42",
-          fontSize: "2.5rem",
           display: "flex",
           marginTop: "1.5rem",
+          padding: "1rem",
         }}
       >
         <b>{primaryText}</b>{" "}
@@ -22,6 +23,7 @@ const SectionHeader = ({ primaryText, secondaryText }) => {
               fontSize: "30px",
               display: "flex",
               justifyContent: "center",
+              fontFamily: "Poppins",
             }}
           >
             &#62;
@@ -36,24 +38,55 @@ const SectionHeader = ({ primaryText, secondaryText }) => {
 const PageBar = () => {
   return (
     <div
+      className="page_bar"
       style={{
         width: "100%",
-        height: "185px",
         backgroundColor: "#FFB121",
         overflow: "hidden",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div style={{ marginTop: "2rem" }}>
-          <h3 style={{ fontSize: "2rem" }}>
-            <b style={{ fontFamily: "sans-serif", color: "160C42" }}>
-              We Provide <span style={{ color: "white" }}>Free</span>{" "}
-              Consultancy to
-              <br /> Everyone
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "5rem",
+        }}
+      >
+        <div
+          style={{
+            marginTop: "2rem",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <h3 className="page_bar_text">
+            <b
+              style={{
+                fontFamily: "Poppins",
+                color: "#160C42",
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+              }}
+            >
+              We Provide{" "}
+              <span
+                style={{
+                  color: "white",
+                  fontFamily: "Poppins",
+                  margin: "0rem 0.5rem 0rem 0.5rem",
+                }}
+              >
+                Free
+              </span>{" "}
+              Consultancy to <br /> Everyone
             </b>
           </h3>
         </div>
-        <div style={{ width: "15rem", height: "12rem" }}>
+        <div
+          className="page_bar_image_lg"
+          style={{ width: "15rem", height: "12rem" }}
+        >
           <img
             src="https://www.dropbox.com/s/f8t6aii1wyfysru/InkedScreenshot_1_LI.jpg?dl=0&raw=1"
             alt=""
@@ -61,6 +94,22 @@ const PageBar = () => {
             height="100%"
           />
         </div>
+      </div>
+      <div
+        className="page_bar_image_sm"
+        style={{
+          width: "15rem",
+          height: "12rem",
+          transform: "translateX(25%)",
+          paddingBottom: "1rem",
+        }}
+      >
+        <img
+          src="https://www.dropbox.com/s/f8t6aii1wyfysru/InkedScreenshot_1_LI.jpg?dl=0&raw=1"
+          alt=""
+          width="100%"
+          height="100%"
+        />
       </div>
     </div>
   );

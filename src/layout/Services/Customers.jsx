@@ -34,7 +34,13 @@ const ServiceDetailsCard = ({ content, imageSrc }) => {
           }}
         >
           <div style={{ width: "80%", height: "5rem" }}>
-            <Typography style={{ fontWeight: 600, color: "#160C42" }}>
+            <Typography
+              style={{
+                fontWeight: 600,
+                color: "#160C42",
+                fontFamily: "Poppins",
+              }}
+            >
               {content}
             </Typography>
           </div>

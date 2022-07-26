@@ -1,0 +1,173 @@
+.page_header {
+  width: 100%;
+  height: 10%;
+  background-color: #ffb121;
+}
+
+.header_component_content {
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .header_component_content {
+    width: 90%;
+  }
+}
+
+#register_button {
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  margin-top: 5rem;
+  height: 3.5rem;
+  width: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  #register_button {
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 50%;
+  }
+}
+
+#header_img {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  #header_img {
+    display: none;
+  }
+}
+
+.consultant_card {
+  width: 350px;
+  height: 450px;
+  left: 388px;
+  top: 569px;
+  background: #fbfaff;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 1.5rem;
+  margin: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .consultant_card {
+    width: 400px;
+    margin: 1rem;
+  }
+}
+
+.consultant_card_content {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25) inset;
+  width: 100%;
+  height: 27%;
+  background-color: #ffb121;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.consultant_card_description {
+  display: flex;
+  text-align: justify;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.footer_width {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer_width {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* footer.jsx */
+.content_image {
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  display: block;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .content_image {
+    display: none;
+  }
+}
+
+::selection {
+  color: #ffb121;
+  background: black;
+}
+
+.fashioo_logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateX(20%) translateY(-50%);
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.about_us_main {
+  width: 55%;
+}
+
+.customer_feedbacks {
+  width: 80%;
+  height: 8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .about_us_main {
+    width: 100%;
+  }
+  .customer_feedbacks {
+    height: 15rem;
+    width: 100%;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 30rem;
+  transform: translateX(-3rem) translateY(5rem);
+}
+
+.footer_logo {
+  top: 50%;
+  transform: translateX(20%) translateY(5%);
+}
+
+.footer_content {
+  justify-content: center;
+  transform: translateX(5rem) translateY(-2rem);
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    width: 70%;
+    height: 55rem;
+    transform: translateX(1rem) translateY(1rem);
+  }
+
+  .footer_logo {
+    top: 50%;
+    transform: translateX(35%) translateY(5%);
+  }
+
+  .footer_content {
+    position: relative;
+    margin-top: 19rem;
+    transform: translateX(-5rem) translateY(1%);
+  }
+}

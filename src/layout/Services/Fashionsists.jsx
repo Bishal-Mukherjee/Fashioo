@@ -5,14 +5,15 @@ import { Typography } from "@material-ui/core";
 const DetailsCard = ({ content, imageSrc }) => {
   return (
     <div>
-      <div className="fashionists_card">
+      <div className="fashionists_card_sm">
         <div
           style={{
             display: "flex",
-            marginLeft: "2.5rem",
+            justifyContent: "flex-start",
+            flexWrap: "wrap",
           }}
         >
-          <div className="service_circle">
+          <div className="fashionists_service_circle_sm">
             <div
               style={{
                 display: "flex",
@@ -22,25 +23,26 @@ const DetailsCard = ({ content, imageSrc }) => {
             >
               <img
                 alt=""
-                style={{
-                  width: "5rem",
-                  height: "5rem",
-                }}
+                className="fashionists_circle_card_img "
                 src={imageSrc}
               />
             </div>
           </div>
-
           <div
             style={{
-              marginTop: "3rem",
               display: "flex",
               justifyContent: "flex-start",
               marginLeft: "2rem",
             }}
           >
-            <div style={{ width: "15rem" }}>
-              <Typography style={{ fontWeight: 600, color: "#160C42" }}>
+            <div style={{ width: "18rem", marginTop: "1rem" }}>
+              <Typography
+                style={{
+                  fontWeight: 600,
+                  color: "#160C42",
+                  fontFamily: "Poppins",
+                }}
+              >
                 {content}
               </Typography>
             </div>

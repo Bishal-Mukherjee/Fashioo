@@ -1,13 +1,12 @@
 .service_card {
-  width: 353px;
+  width: 335px;
   height: 490px;
   left: 388px;
   top: 569px;
   background: #fbfaff;
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
   border-radius: 110px 0px 100px;
-  margin-top: 1.5rem;
-  margin: 2.5rem;
+  margin: 2rem;
 }
 
 .service_circle {
@@ -28,14 +27,85 @@
   box-shadow: 0px 4px 24px #946102;
 }
 
-.fashionists_card {
-  width: 500px;
-  height: 200px;
-  left: 388px;
-  top: 569px;
-  background: #fbfaff;
+.page_bar {
+  height: 270px;
+}
+
+.section_header {
+  font-size: 2.5rem;
+}
+
+.page_bar_image_lg {
+  display: block;
+}
+
+.page_bar_image_sm {
+  display: none;
+}
+
+.page_bar_text {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .page_bar {
+    height: 310px;
+  }
+  .page_bar_image_lg {
+    display: none;
+  }
+  .page_bar_image_sm {
+    display: block;
+  }
+  .ad_circle {
+    margin: 0.5rem;
+    margin-top: -0.5rem;
+  }
+  .section_header {
+    font-size: 1rem;
+  }
+  .page_bar_text {
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
+}
+
+.fashionists_card_sm {
+  width: 400px;
+  height: 250px;
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
-  border-radius: 110px 0px 100px;
-  margin-top: 1.5rem;
-  margin: 2.5rem;
+  border-radius: 50px 0px 50px 0px;
+  margin-top: 1rem;
+  margin: 1.5rem;
+}
+
+.fashionists_service_circle_sm {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: #ffb121;
+  box-shadow: 0px 4px 20px #946102;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.fashionists_circle_card_img {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .fashionists_card_sm {
+    width: 340px;
+    height: 200px;
+  }
+  .fashionists_service_circle_sm {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .fashionists_circle_card_img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
